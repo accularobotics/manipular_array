@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Manipulação de Arrays</title>
   <script>
     let array = [1, 2, 3, 4, 5];
@@ -16,6 +17,11 @@
       displayArray();
     }
 
+    function pushElement() {
+        let parapush = document.getElementById("elemento").value
+      array.push(parapush);
+      displayArray();
+    }
     function shiftElement() {
       array.shift();
       displayArray();
@@ -84,7 +90,7 @@
   <h1>Manipulação de Arrays</h1>
   <p id="arrayDisplay"></p>
   <input type="number" name="elemento" id="elemento" placeholder="Digite o elemento do array">
-  <button onclick="pusharray()">Push</button>
+  <button onclick="pushElement()">Push</button>
   <button onclick="popElement()">Pop</button>
   <button onclick="shiftElement()">Shift</button>
   <button onclick="unshiftElement()">Unshift</button>
