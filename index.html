@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulação de Arrays</title>
+  <script>
+    let array = [1, 2, 3, 4, 5];
+
+    function displayArray() {
+      document.getElementById("arrayDisplay").innerText = "Array: " + array.join(", ");
+    }
+
+    function popElement() {
+      array.pop();
+      displayArray();
+    }
+
+    function shiftElement() {
+      array.shift();
+      displayArray();
+    }
+
+    function unshiftElement() {
+      array.unshift(0);
+      displayArray();
+    }
+
+    function spliceElement() {
+      array.splice(1, 2); // Remove 2 elementos a partir do índice 1
+      displayArray();
+    }
+
+    function sliceElement() {
+      const sliced = array.slice(1, 3); // Copia parte do array
+      alert("Slice: " + sliced.join(", "));
+    }
+
+    function concatArray() {
+      const newArray = array.concat([6, 7, 8]);
+      alert("Concat: " + newArray.join(", "));
+    }
+
+    function indexOfElement() {
+      const index = array.indexOf(3);
+      alert("Index of 3: " + index);
+    }
+
+    function findElement() {
+      const found = array.find(element => element > 2);
+      alert("Find > 2: " + found);
+    }
+
+    function findIndexElement() {
+      const foundIndex = array.findIndex(element => element > 2);
+      alert("FindIndex > 2: " + foundIndex);
+    }
+
+    function sortArray() {
+      array.sort((a, b) => a - b);
+      displayArray();
+    }
+
+    function reverseArray() {
+      array.reverse();
+      displayArray();
+    }
+
+    function splitArray() {
+      const string = "1,2,3,4,5";
+      const splitted = string.split(",");
+      alert("Split: " + splitted.join(", "));
+    }
+
+    function joinArray() {
+      const joined = array.join("-");
+      alert("Join: " + joined);
+    }
+    
+    window.onload = displayArray;
+  </script>
+</head>
+<body>
+  <h1>Manipulação de Arrays</h1>
+  <p id="arrayDisplay"></p>
+  <input type="number" name="elemento" id="elemento" placeholder="Digite o elemento do array">
+  <button onclick="pusharray()">Push</button>
+  <button onclick="popElement()">Pop</button>
+  <button onclick="shiftElement()">Shift</button>
+  <button onclick="unshiftElement()">Unshift</button>
+  <button onclick="spliceElement()">Splice</button>
+  <button onclick="sliceElement()">Slice</button>
+  <button onclick="concatArray()">Concat</button>
+  <button onclick="indexOfElement()">Index of</button>
+  <button onclick="findElement()">Find</button>
+  <button onclick="findIndexElement()">FindIndex</button>
+  <button onclick="sortArray()">Sort</button>
+  <button onclick="reverseArray()">Reverse</button>
+  <button onclick="splitArray()">Split</button>
+  <button onclick="joinArray()">Join</button>
+</body>
+</html>
