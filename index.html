@@ -7,6 +7,7 @@
   <title>Manipulação de Arrays</title>
   <script>
     let array = [1, 2, 3, 4, 5];
+    const aluno = [{nome:"Andre", idade:17},{nome:"Bento", idade:56},{nome:"Carlos", idade:33}]
 
     function displayArray() {
       document.getElementById("arrayDisplay").innerText = "Array: " + array.join(", ");
@@ -104,5 +105,31 @@
   <button onclick="reverseArray()">Reverse</button>
   <button onclick="splitArray()">Split</button>
   <button onclick="joinArray()">Join</button>
+  <button onclick="ForeAch()">ForeAch</button>
+
+  <table>
+    <thead>
+      <td>nome</td>
+      <td>idade</td>
+    </thead>    
+      <tbody>
+        <tr>
+         
+          <td>${aluno.nome}</td>
+          <td>${aluno.idade}</td>
+
+        </tr>
+      </tbody>
+    
+  </table>
+
+
+
+
+
+  
+
+
+
 </body>
 </html>

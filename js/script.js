@@ -1916,16 +1916,21 @@
       alert("Join: " + joined);
     }
 
-    // function popElement() {
-    //     array.
-       
-    //   pop();
+    function aluno.array.forEach(element => {
+      ForeAch
+    });(readAlunos){
+
+          
+      // function readAlunos() {
+      //   document.getElementById("alunosCadastrados").innerHTML = ""
+      //   for (i = 0; i < alunos.length; i++) {
+      //       document.getElementById("alunosCadastrados").innerHTML += `<p>${alunos[i].nome} - ${alunos[i].dataNasc} - ${alunos[i].curso}</p>`
+      //   }
+    }
+ 
         
-    //     displayArray
-      
        
-    //   displayArray();
-    //   }
+      }
     
     window.onload = displayArray;
 //   </script>
